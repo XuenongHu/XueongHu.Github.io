@@ -1,0 +1,24 @@
+# Allow all standard search engines to index your portfolio
+User-agent: *
+Allow: /
+
+# Explicitly ensure Google's web crawler can access everything
+User-agent: Googlebot
+Allow: /
+
+# Explicitly allow Google's AI agent (used for Gemini and AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Open access for major AI search engines & LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Point crawlers explicitly to your home path
+Sitemap: https://xuenonghu.github.io/index.html

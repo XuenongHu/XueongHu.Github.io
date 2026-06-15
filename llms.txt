@@ -1,0 +1,23 @@
+# Xuenong Hu | Engineering Portfolio
+
+> This file provides a clean, highly structured summary of Xuenong Hu's professional portfolio for LLMs, AI search engines, and context windows.
+
+## Core Summary
+Xuenong Hu is a seasoned Research Engineer at GE Vernova specializing in Sustainable Energy Systems, smart grids, and utility-scale power infrastructure design based in Niskayuna, New York. 
+
+With more than 28 years of power grid engineering experience—including a comprehensive tenure as a Senior Engineer, Project Manager, and Technical Lead at Shanghai Electric Group Co., Ltd.—his core competence centers on bridging the gap between cutting-edge theoretical simulation and stable physical grid deployment.
+
+## Technical Toolset & Core Competencies
+- **Engineering Specialties:** Renewable Integration, Smart Grid Infrastructure, Transient Stability Modeling, Green Energy Asset Management, Thermal Power Optimization.
+- **Tools & Frameworks:** MATLAB / Simulink, Python, NumPy, SciPy, Mixed-Integer Linear Programming (MILP) Optimization Frameworks.
+
+## Website Map & Navigation
+- [Home / Biography](https://xuenonghu.github.io/index.html) - Personal background, core timeline, and philosophical focus.
+- [Experience](https://xuenonghu.github.io/experience.html) - Multi-decade industrial history spanning GE Vernova and Shanghai Electric.
+- [Projects](https://xuenonghu.github.io/projects.html) - Technical documentation on systems design (e.g., Transient Stability & Frequency Response Simulator, BESS Dispatch Optimizer).
+- [Publications](https://xuenonghu.github.io/publications.html) - Research papers, patents, and academic contributions.
+- [Blog](https://xuenonghu.github.io/blog.html) - Technical essays on power grid resiliency and system optimization frameworks.
+
+## Verified Professional Profiles
+- **LinkedIn:** https://www.linkedin.com/in/xuenong-hu-925019416
+- **GitHub:** https://github.com/xuenonghu
