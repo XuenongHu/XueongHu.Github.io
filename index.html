@@ -50,33 +50,16 @@
       "knowsAbout": ["Sustainable Energy Systems", "Smart Grid Infrastructure", "Power Systems Engineering", "Transient Stability Modeling", "Renewable Integration"]
     }
     </script>
-
-    <style>
-        /* Structural layout corrections to prevent Navbar overlapping hero elements */
-        main {
-            padding-top: 80px;
-        }
-        @media (max-width: 768px) {
-            main {
-                padding-top: 60px;
-            }
-            .hero {
-                height: auto !important;
-                padding: 100px 20px !important;
-            }
-        }
-    </style>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Xuenong Hu</a>
+            <a href="index.html" class="nav-logo">Xuenong Hu</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button></li>
@@ -87,7 +70,7 @@
         </div>
     </nav>
 
-    <main>
+    <main style="padding-top: 80px;">
         <header class="hero">
             <div class="hero-content">
                 <h1>Hi, I'm <span class="highlight">Xuenong Hu</span></h1>
@@ -116,7 +99,7 @@
                         </div>
                         <div class="metric-item">
                             <span class="metric-number">MILP</span>
-                            <span class="metric-label">Optimization Frameworks Designed</span>
+                            <span class="metric-label">Optimization Frameworks</span>
                         </div>
                     </div>
 
@@ -144,10 +127,62 @@
                 <div class="project-card">
                     <div class="project-content">
                         <div class="project-icons">
-                            <i class="fas fa-bolt project-type-icon"></i>
+                            <i class="fas fa-bolt"></i>
                             <div class="external-links">
-                                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener me" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <h3>Transient Stability & Frequency Response Simulator</h3>
-                        <p class="project-description">An analytical simulation framework modeling
+                        <p class="project-description">An analytical simulation framework modeling multi-bus power grid frequency contingencies and integrating simulated battery storage control parameters.</p>
+                        <ul class="project-tech">
+                            <li>MATLAB</li>
+                            <li>Simulink</li>
+                            <li>Transient Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-calculator"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>BESS Dispatch Optimizer</h3>
+                        <p class="project-description">A mathematical dispatch scheduling engine utilizing programming algorithms to optimize charge/discharge profiles under volatile localized parameters.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>NumPy / SciPy</li>
+                            <li>Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="projects.html" class="btn">View All Engineering Projects</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="padding: 60px 20px; text-align: center;">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="max-width: 500px; margin: 0 auto 30px auto;">
+                Whether you want to discuss power grid resiliency, modeling frameworks, or industry insights, feel free to drop a message.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 30px; font-size: 1.5rem;">
+                <a href="https://www.linkedin.com/in/xuenong-hu-925019416" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Xuenong Hu &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
