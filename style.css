@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Global Theme & Custom CSS Variables
+   Global Theme Settings
    ========================================================================== */
 :root {
     --bg-main: #f8f9fa;
@@ -7,26 +7,24 @@
     --text-primary: #1a202c;
     --text-secondary: #4a5568;
     --text-muted: #718096;
-    --accent: #005a9c; /* Professional Power Systems Blue */
+    --accent: #005a9c;
     --white: #ffffff;
     --border: #e2e8f0;
-    --transition: all 0.3s ease;
 }
 
-/* Dark mode configurations triggered safely via JavaScript */
 [data-theme="dark"] {
     --bg-main: #0a0f1d;
     --bg-light: #131c2e;
     --text-primary: #f7fafc;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
-    --accent: #38bdf8; /* Energy Cyan */
+    --accent: #38bdf8;
     --white: #ffffff;
     --border: #1e293b;
 }
 
 /* ==========================================================================
-   Base Component Overrides
+   Base Elements
    ========================================================================== */
 * {
     margin: 0;
@@ -39,20 +37,19 @@ body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
-    transition: background-color var(--transition), color var(--transition);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
     color: var(--accent);
     text-decoration: none;
-    transition: var(--transition);
+    transition: opacity 0.3s ease;
 }
 
 a:hover {
     opacity: 0.8;
 }
 
-/* Structural Spacing Containers */
 .section {
     padding: 60px 20px;
     max-width: 1100px;
@@ -60,11 +57,11 @@ a:hover {
 }
 
 .bg-light {
-    background-color: var(--bg-light) !important;
+    background-color: var(--bg-light);
 }
 
 /* ==========================================================================
-   Unified Navigation Design
+   Navigation Component
    ========================================================================== */
 .navbar {
     position: fixed;
@@ -74,7 +71,6 @@ a:hover {
     background-color: var(--bg-light);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
-    transition: background-color var(--transition), border var(--transition);
 }
 
 .nav-container {
@@ -89,7 +85,7 @@ a:hover {
 .nav-logo {
     font-weight: 700;
     font-size: 1.25rem;
-    color: var(--text-primary) !important;
+    color: var(--text-primary);
 }
 
 .nav-menu {
@@ -100,12 +96,12 @@ a:hover {
 }
 
 .nav-link {
-    color: var(--text-secondary) !important;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--accent) !important;
+    color: var(--accent);
 }
 
 .theme-btn {
@@ -116,7 +112,7 @@ a:hover {
     cursor: pointer;
     color: var(--text-primary);
     font-size: 0.85rem;
-    transition: var(--transition);
+    transition: background-color 0.3s ease;
 }
 
 .theme-btn:hover {
@@ -133,7 +129,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   Hero Landing Header
+   Hero Section
    ========================================================================== */
 .hero {
     display: flex;
@@ -171,11 +167,11 @@ a:hover {
 .btn {
     display: inline-block;
     background-color: var(--accent);
-    color: var(--white) !important;
+    color: var(--white);
     padding: 12px 28px;
     border-radius: 6px;
     font-weight: 600;
-    transition: var(--transition);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .btn:hover {
@@ -184,7 +180,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   About Me Layout Structures
+   About Layout
    ========================================================================== */
 .section-title {
     font-size: 2rem;
@@ -231,7 +227,6 @@ a:hover {
     border: 1px solid var(--border);
 }
 
-/* Custom Statistics Counter Board */
 .metrics-dashboard {
     display: flex;
     gap: 20px;
@@ -259,7 +254,6 @@ a:hover {
     color: var(--text-muted);
 }
 
-/* Skills Framework Matrix */
 .skills-list {
     list-style: none;
     display: grid;
@@ -277,24 +271,24 @@ a:hover {
 }
 
 /* ==========================================================================
-   Multi-Tier Grid Formats (Projects & Architecture)
+   Projects Grid
    ========================================================================== */
-.projects-grid, .blog-container {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 20px;
 }
 
-.project-card, .blog-card {
-    background-color: var(--bg-light) !important;
-    border: 1px solid var(--border) !important;
+.project-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 25px;
-    transition: var(--transition);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover, .blog-card:hover {
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
@@ -311,14 +305,14 @@ a:hover {
     color: var(--text-primary);
 }
 
-.project-card h3, .blog-card h3 {
-    color: var(--text-primary) !important;
+.project-card h3 {
+    color: var(--text-primary);
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
-.project-description, .blog-card p {
-    color: var(--text-secondary) !important;
+.project-description {
+    color: var(--text-secondary);
     font-size: 0.95rem;
     margin-bottom: 20px;
 }
@@ -340,7 +334,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   Global Footer Component Configuration
+   Footer Component
    ========================================================================== */
 footer {
     text-align: center;
@@ -352,7 +346,7 @@ footer {
 }
 
 /* ==========================================================================
-   Responsive Adaptation System
+   Media Queries
    ========================================================================== */
 @media (max-width: 768px) {
     .about-container {
