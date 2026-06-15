@@ -3,110 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Engineering Portfolio</title>
+    <title>Xuenong Hu | Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="help" type="text/markdown" href="/llms.txt">
+
+    <meta name="description" content="Professional engineering portfolio of Xuenong Hu, Research Engineer at GE Vernova. Specializing in Sustainable Energy Systems, smart grids, and utility-scale power infrastructure design.">
+    <meta name="keywords" content="Xuenong Hu, GE Vernova, Shanghai Electric, Research Engineer, Power Systems Engineering, Sustainable Energy, Smart Grid, Tsinghua University Portfolio">
+    <meta name="author" content="Xuenong Hu">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xuenonghu.github.io/index.html">
+    <meta property="og:title" content="Xuenong Hu | Sustainable Energy Research Engineer">
+    <meta property="og:description" content="Designing, optimizing, and deploying industrial-scale solutions for the next generation of global power infrastructure.">
+    <meta property="og:image" content="https://xuenonghu.github.io/headshot.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xuenong Hu",
+      "jobTitle": "Research Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "GE Vernova"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "Tsinghua University"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Niskayuna",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "url": "https://xuenonghu.github.io/index.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/xuenong-hu-925019416",
+        "https://github.com/xuenonghu",
+        "https://x.com/XuenongHu",
+        "https://www.instagram.com/xuenong.hu/",
+        "https://www.facebook.com/profile.php?id=61590784588778"
+      ],
+      "knowsAbout": ["Sustainable Energy Systems", "Smart Grid Infrastructure", "Power Systems Engineering", "Transient Stability Modeling", "Renewable Integration"]
+    }
+    </script>
+
+    <style>
+        /* Structural layout corrections to prevent Navbar overlapping hero elements */
+        main {
+            padding-top: 80px;
+        }
+        @media (max-width: 768px) {
+            main {
+                padding-top: 60px;
+            }
+            .hero {
+                height: auto !important;
+                padding: 100px 20px !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">YN</a>
+            <a href="#" class="nav-logo">Xuenong Hu</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <h2>Mechanical / Software / Electrical Engineer</h2>
-            <p>I build robust, scalable solutions to solve complex real-world problems.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Hello! I am a passionate engineer with experience in [Your Specialization]. I love bridging the gap between theoretical design and practical implementation.</p>
-                <p>Here are a few technologies and tools I've been working with recently:</p>
-                <ul class="skills-list">
-                    <li><i class="fas fa-caret-right"></i> Python / C++</li>
-                    <li><i class="fas fa-caret-right"></i> CAD (SolidWorks/Fusion360)</li>
-                    <li><i class="fas fa-caret-right"></i> Git / GitHub</li>
-                    <li><i class="fas fa-caret-right"></i> MATLAB / Simulink</li>
-                </ul>
+    <main>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Xuenong Hu</span></h1>
+                <h2>Research Engineer | Sustainable Energy Systems</h2>
+                <p>I design, optimize, and deploy industrial-scale solutions for the next generation of global power infrastructure.</p>
+                <a href="projects.html" class="btn">View My Work</a>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="projects" class="section bg-light">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hello! I am a <strong>Research Engineer at GE Vernova</strong> specializing in Sustainable Energy Systems based in Niskayuna, New York. Having recently relocated my family from China to the United States to start this new chapter, my core engineering philosophy centers on bridging the gap between cutting-edge theoretical simulation and practical, stable physical deployments.</p>
+                    
+                    <p>Prior to my current role in the US, I spent nearly 28 years in China with <strong>Shanghai Electric Group Co., Ltd.</strong>, where I progressed from a foundational systems engineer to Senior Engineer, Project Manager, and Technical Lead. Bringing decades of seasoned international experience, I specialize in transient stability modeling, green energy asset management, complex system reliability optimization, and executing multi-million-dollar energy infrastructure initiatives aimed at meeting aggressive carbon reduction goals.</p>
+                    
+                    <div class="metrics-dashboard">
+                        <div class="metric-item">
+                            <span class="metric-number">28+</span>
+                            <span class="metric-label">Years Power Grid Experience</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">GW+</span>
+                            <span class="metric-label">Renewable Integration Pipeline</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">MILP</span>
+                            <span class="metric-label">Optimization Frameworks Designed</span>
+                        </div>
+                    </div>
+
+                    <p>Here are a few core competencies and technical tools I focus on:</p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> Renewable Integration</li>
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> Smart Grid Infrastructure</li>
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> MATLAB / Simulink</li>
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> Python / Data Modeling</li>
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> Energy Storage Systems</li>
+                        <li><i class="fas fa-caret-right class-accent-icon"></i> Thermal Power Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="about-image">
+                    <img src="headshot.jpg" alt="Xuenong Hu Professional Headshot" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-bolt project-type-icon"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener me" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Transient Stability & Frequency Response Simulator</h3>
+                        <p class="project-description">An analytical simulation framework modeling multi-bus power grid frequency contingencies and integrating simulated battery storage control parameters.</p>
+                        <ul class="project-tech">
+                            <li>MATLAB</li>
+                            <li>Simulink</li>
+                            <li>Transient Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-calculator project-type-icon"></i>
+                            <div class="external-links">
+                                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener me" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>BESS Dispatch Optimizer</h3>
+                        <p class="project-description">A mathematical dispatch scheduling engine utilizing programming algorithms to optimize charge/discharge profiles under volatile localized parameters.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>NumPy / SciPy</li>
+                            <li>Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
             
-            <div class="project-card">
-                <div class="project-content">
-                    <div class="project-icons">
-                        <i class="far fa-folder-open folder-icon"></i>
-                        <div class="external-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3>Autonomous Robot Navigation</h3>
-                    <p>Designed and programmed a mobile robot to navigate obstacles using ROS and LiDAR sensors, reducing mapping error by 15%.</p>
-                    <ul class="project-tech">
-                        <li>ROS</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
+            <div class="section-action-wrapper" style="text-align: center; margin-top: 40px;">
+                <a href="projects.html" class="btn btn-sm">View All Engineering Projects</a>
             </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-content">
-                    <div class="project-icons">
-                        <i class="far fa-folder-open folder-icon"></i>
-                        <div class="external-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Data Analysis Dashboard</h3>
-                    <p>Built an interactive web app to visualize manufacturing sensor telemetry in real-time, optimizing predictive maintenance schedules.</p>
-                    <ul class="project-tech">
-                        <li>Python</li>
-                        <li>Streamlit</li>
-                        <li>Pandas</li>
-                    </ul>
-                </div>
+        <!-- Dynamic Contact Anchor Block -->
+        <section id="contact" class="section" style="padding: 60px 20px; text-align: center;">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="max-width: 500px; margin: 0 auto 30px auto; color: var(--light-slate);">
+                Whether you want to discuss power grid resiliency, modeling frameworks, or industry insights, feel free to drop a message.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 30px; font-size: 1.5rem;">
+                <a href="https://www.linkedin.com/in/xuenong-hu-925019416" target="_blank" rel="noopener me" style="color: var(--accent);"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/xuenonghu" target="_blank" rel="noopener me" style="color: var(--white);"><i class="fab fa-github"></i></a>
+                <a href="mailto:your-email@example.com" style="color: var(--light-slate);"><i class="fas fa-envelope"></i></a>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-        <h2>Get In Touch</h2>
-        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is open!</p>
-        <a href="mailto:your.email@example.com" class="btn">Say Hello</a>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-
-    <footer>
-        <p>Designed & Built by Your Name &copy; 2026</p>
+    <footer style="padding: 20px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px;">
+        <p>Designed & Built by Xuenong Hu &copy; 2026</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
